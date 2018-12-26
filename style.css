@@ -8,6 +8,8 @@ body, html{
     padding: 0; */
     height: 100%;
     background-image: linear-gradient(to bottom right, #5700ff, #800065);
+    /* background-color: #f00 */
+
 }
 .circular-border{
     border-radius: 2rem;
@@ -15,4 +17,8 @@ body, html{
 .task{
     font-family: 'Comfortaa', cursive;
     color: black;
+}
+.display-2{
+    font-family: 'Luckiest Guy', cursive;
+    color: #fff
 }
