@@ -1,10 +1,12 @@
 let addTask = function(){
     let txt = document.getElementById('task-text');
     let body = document.getElementById('tasks');
+    // Each div for each item
     let div = document.createElement('div');
     div.setAttribute('class', 'alert alert-warning alert-dismissible');
     let item = document.createElement('p');
     item.setAttribute('class', 'task');
+    // content has the actual text
     let content = document.createTextNode(txt.value);
     let close_button = document.createElement('button');
     close_button.setAttribute('class', 'close');
@@ -20,6 +22,7 @@ let addTask = function(){
         txt.focus();
     }
     else{
+        localStorage.setItem('list', txt.value)
         item.appendChild(content);
         close_button.appendChild(icon);
         div.appendChild(item);
@@ -28,4 +31,7 @@ let addTask = function(){
         txt.focus();
     }
     document.getElementById('task-text').value = '';
+    // close_button.addEventListener('onclick', function(){
+    //     localStorage.removeItem('list')
+    });
 };
