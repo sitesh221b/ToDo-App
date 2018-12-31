@@ -8,7 +8,6 @@ body, html{
     padding: 0; */
     height: 100%;
     background-image: linear-gradient(to bottom right, #5700ff, #800065);
-    /* background-color: #f00 */
 
 }
 .circular-border{
@@ -17,8 +16,29 @@ body, html{
 .task{
     font-family: 'Comfortaa', cursive;
     color: black;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    cursor: pointer;
 }
 .display-2{
     font-family: 'Luckiest Guy', cursive;
     color: #fff
+}
+.remove{
+    font-size: 20px;
+    padding: 0 8px 3px 8px;
+    margin: 0;
+    cursor: pointer;
+    float: right;
+    border: none;
+    background: none;
+    border-radius: 10px;
+}
+.remove:hover{
+    background-color: #ea4f4f;
+    color: #fff;
+}
+.div-style{
+    /* cursor: pointer; */
 }
